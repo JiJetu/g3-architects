@@ -23,6 +23,13 @@ body {
     cursor: pointer;
 }
 
+/* primary description */
+.primary-description,
+.quick-list {
+    color: #727272;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
 
 /* header section style */
 header {
@@ -36,8 +43,8 @@ header {
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    margin-bottom: 70px;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .nav-container>.logo {
@@ -77,45 +84,102 @@ header {
     font-weight: 700;
 }
 
-.banner-description {
-    color: #727272;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-.banner img{
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
+
+/* main section style */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* quick list section style */
+.quick-list-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.img-container img {
+    width: 342px;
+    height: 342px;
+}
+
+.team-container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
+
+.of-our {
+    color: #131313;
+}
+
+.features {
+    color: #FF900E;
+}
+
 
 
 
 /* responsive media query */
 /* mobile screen or small device */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
+
     .nav-container,
-    .nav-container>ul
-    {
+    .nav-container>ul,
+    .quick-list-section {
         flex-direction: column;
     }
-    .nav-container>ul{
+
+    .nav-container>ul {
         text-align: center;
         margin-top: 20px;
+    }
+
+    .img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-container {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 /* table or medium screen */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
+    header {
         padding: 50px;
     }
-    .nav-container
-    {
+
+    .nav-container,
+    .quick-list-section {
         flex-direction: column;
     }
-    .nav-container>ul{
+
+    .nav-container>ul {
         margin-top: 50px;
+    }
+    .team-container {
+        text-align: center;
     }
 }
