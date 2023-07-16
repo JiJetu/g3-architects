@@ -25,7 +25,8 @@ body {
 
 .nav-container>.logo,
 .some-fact-title,
-.sponsors-title {
+.sponsors-title,
+.features-title {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
@@ -131,14 +132,61 @@ main {
     color: #131313;
 }
 
-.features {
+.feature {
     color: #FF900E;
+}
+
+/* features style */
+.features {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 7rem;
+}
+
+.features-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 1.4rem;
+}
+
+.features-container .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 0px 30px 33px;
+}
+
+
+.features-img img {
+    height: 90%;
+    border-radius: 8px;
+}
+
+.ten-years-badge {
+    padding: 30px 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #FF900E;
+    width: 50%;
+    position: relative;
+    bottom: 90px;
+    right: 80px;
+}
+
+.ten-years-badge-title {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+.ten-years-badge p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* some facts section style */
 .some-facts {
     margin-top: 160px;
-
 }
 
 .some-fact-card-container {
@@ -213,7 +261,9 @@ footer {
     .nav-container>ul,
     .quick-list-section,
     .some-fact-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container, 
+    .features
+    {
         flex-direction: column;
     }
 
@@ -240,8 +290,15 @@ footer {
     .some-facts-description {
         max-width: auto;
     }
-    footer{
+    .features-img img {
+        max-width: 100%;
+    }
+    footer {
         padding: 20px 30px;
+    }
+    .ten-years-badge{
+        position: static;
+        margin: 0 auto;
     }
 
 }
@@ -255,7 +312,8 @@ footer {
     .nav-container,
     .quick-list-section,
     .some-fact-card-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    .features 
     {
         flex-direction: column;
     }
@@ -273,7 +331,15 @@ footer {
     .some-fact-container {
         text-align: center;
     }
-    footer{
+
+    footer {
         padding: 20px 30px;
+    }
+    .features-img img {
+        max-width: 100%;
+    }
+    .ten-years-badge {
+        right: 0;
+        left: 25%;
     }
 }
