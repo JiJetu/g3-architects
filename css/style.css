@@ -24,7 +24,8 @@ body {
 }
 
 .nav-container>.logo,
-.some-fact-title {
+.some-fact-title,
+.sponsors-title {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
@@ -142,7 +143,7 @@ main {
 
 .some-fact-card-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
     margin-top: 80px;
     gap: 2.5rem;
@@ -169,8 +170,35 @@ main {
     font-size: 1.2rem;
 }
 
+/* sponsors section style */
+.sponsors {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sponsors-img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.sponsors-img-container img {
+    width: 153px;
+}
 
 
+/* footer style */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    padding: 38px 400px;
+    text-align: center;
+    color: #424242;
+    font-size: 1.2rem;
+}
 
 
 /* responsive media query */
@@ -184,8 +212,8 @@ main {
     .nav-container,
     .nav-container>ul,
     .quick-list-section,
-    .some-fact-card-container 
-    {
+    .some-fact-card-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 
@@ -201,15 +229,19 @@ main {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .some-facts, 
-    .nav-container>ul, 
+
+    .some-facts,
+    .nav-container>ul,
     .team-container,
-    .some-fact-container
-    {
+    .some-fact-container {
         text-align: center;
     }
-    .some-facts-description, .team-description{
+
+    .some-facts-description {
         max-width: auto;
+    }
+    footer{
+        padding: 20px 30px;
     }
 
 }
@@ -222,7 +254,8 @@ main {
 
     .nav-container,
     .quick-list-section,
-    .some-fact-card-container 
+    .some-fact-card-container,
+    .sponsors-img-container
     {
         flex-direction: column;
     }
@@ -237,8 +270,10 @@ main {
     }
 
     .team-container,
-    .some-fact-container
-    {
+    .some-fact-container {
         text-align: center;
+    }
+    footer{
+        padding: 20px 30px;
     }
 }
