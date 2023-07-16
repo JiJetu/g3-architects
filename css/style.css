@@ -17,8 +17,10 @@ body {
     border: none;
     background-color: #FF900E;
     color: #FFF;
+    font-size: 1.25rem;
     font-weight: 600;
     padding: 20px 25px;
+    cursor: pointer;
 }
 
 
@@ -27,14 +29,15 @@ header {
     max-width: 1920px;
     margin: 0 auto;
     background: rgba(255, 144, 14, 0.10);
+    padding: 50px 220px;
 }
 
 /* navbar style */
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 50px 220px;
+    align-items: center; 
+    margin-bottom: 70px;
 }
 
 .nav-container>.logo {
@@ -76,4 +79,43 @@ header {
 
 .banner-description {
     color: #727272;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/* responsive media query */
+/* mobile screen or small device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    .nav-container,
+    .nav-container>ul
+    {
+        flex-direction: column;
+    }
+    .nav-container>ul{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* table or medium screen */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 50px;
+    }
+    .nav-container
+    {
+        flex-direction: column;
+    }
+    .nav-container>ul{
+        margin-top: 50px;
+    }
 }
